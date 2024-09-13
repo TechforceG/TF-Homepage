@@ -15,6 +15,8 @@
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -192,7 +194,7 @@
                     <div class="about-right" data-aos="fade-left" data-aos-duration="3000">
                         <div class="section-title left">
                             <span class="badge"><i class="fa-solid fa-star"></i>About Techforce</span>
-                            <h1>Making Things Easy For You!</h1>
+                            <h1 class="light-bg-title">Making Things Easy For You!</h1>
                             <p>We turn innovative ideas into exceptional products customized to meet your specific
                                 needs. Our rapid
                                 development method produces innovations that shape the business environment.</p>
@@ -253,7 +255,7 @@
             <div class="section-title" data-aos="fade-up" data-aos-duration="2000"><span class="badge"><i
                         class="fa-solid fa-star"></i>Services Techforce
                     Provides</span>
-                <h1 class="section-title">Our Highlighted Services</h1>
+                <h1 class="dark-bg-title">Our Highlighted Services</h1>
             </div>
 
             <div class="services-slider" data-aos="fade-up" data-aos-duration="2000">
@@ -262,7 +264,22 @@
                         <img src="Images/Services/Software Development.svg" alt="Software Development">
                         <h3>Software Development</h3>
                         <p>Custom software solutions and innovation</p>
-                        <a href="#">Explore Further →</a>
+
+                        <button class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                            <span class="text">Explore Further</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                        </button>
+
                     </div>
                 </div>
                 <div class="card" data-tilt>
@@ -270,7 +287,20 @@
                         <img src="Images/Services/Fintech Solutions.svg" alt="Fintech Solutions">
                         <h3>Fintech Solutions</h3>
                         <p>Financial technology solutions for growth</p>
-                        <a href="#">Explore Further →</a>
+                        <button class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                            <span class="text">Explore Further</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 <div class="card" data-tilt>
@@ -278,7 +308,20 @@
                         <img src="Images/Services/Blockchain Development.svg" alt="Blockchain Development">
                         <h3>Blockchain Development</h3>
                         <p>Secure and scalable blockchain development</p>
-                        <a href="#">Explore Further →</a>
+                        <button class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                            <span class="text">Explore Further</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -288,11 +331,11 @@
     <section class="portfolio-section text-center" data-aos="fade-up" data-aos-duration="3000">
         <div class="container text">
             <span class="badge"><i class="fa-solid fa-star"></i>Featured Case Study</span>
-            <h1 class="section-title">Explore Our Portfolio</h1>
+            <h1 class="light-bg-title">Explore Our Portfolio</h1>
 
             <div class="row">
                 <!-- First Card -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card position-relative">
                         <img src="Images/Portfolio/Medicare-App.webp" class="card-img-top card-image" alt="#">
                         <div class="card-body">
@@ -308,13 +351,29 @@
                 </div>
 
                 <!-- Second Card -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card position-relative">
                         <img src="Images/Portfolio/Fortitude.webp" class="card-img-top card-image" alt="#">
                         <div class="card-body">
                             <div class="card-content">
                                 <h5 class="card-title">Fortitude</h5>
                                 <p class="card-description">A community-focused NFT project.</p>
+                            </div>
+                            <a href="#" class="arrow-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Card -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="Images/Portfolio/Medicare-App.webp" class="card-img-top card-image" alt="#">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">i-Care</h5>
+                                <p class="card-description">Medicare app simplifies medical access.</p>
                             </div>
                             <a href="#" class="arrow-icon">
                                 <i class="fas fa-arrow-right"></i>
@@ -331,7 +390,7 @@
         <div class="container text-center">
             <div class="section-title">
                 <span class="badge"><i class="fa-solid fa-star"></i>Our Process</span>
-                <h1 class="section-title">Design and Development Approach</h1>
+                <h1 class="light-bg-title">Design and Development Approach</h1>
             </div>
             <div class="desktop-view">
                 <div class="row align-items-center" data-aos="fade-right" data-aos-duration="2000">
@@ -518,7 +577,7 @@
     <section class="Industry-Section" data-aos="fade-up" data-aos-duration="2000">
         <div class="container text-center">
             <span class="badge"><i class="fa-solid fa-star"></i>Serving Clients Globally</span>
-            <h1 class="section-title">Industries We Serve</h1>
+            <h1 class="light-bg-title">Industries We Serve</h1>
             <div class="industry-main">
                 <div class="industry-item" data-order="1" data-text="Fintech">
                     <i class="fa fa-dollar-sign industry-icon"></i>
@@ -647,7 +706,120 @@
         </div>
     </section>
 
-    
+    <section class="Testimonial-section">
+        <div class="container text-center">
+            <div class="section-title">
+                <span class="badge"><i class="fa-solid fa-star"></i>Our Testimonial</span>
+                <h1 class="light-bg-title">What Client's are Saying</h1>
+            </div>
+            <div class="testimonial_master_wrapper">
+                <div class="testimonialBg2"></div>
+                <div class="testimonialBg3"></div>
+                <div class="slideshow">
+                    <div class="content"> <!-- slide 1 -->
+                        <div class="thumbnail">
+                            <img src="https://farsighttechnologies.com/wp-content/uploads/2020/09/AC.jpg">
+                        </div>
+                        <div class="btnNtxt">
+                            <div class="testimonialAllContent">
+                                <div class="testimonial_scroll">
+                                    <h1 class="testimonialCustomSliderHeading">A wonderful, user-friendly HR solution!
+                                        Farsight
+                                        HR Solution
+                                        helped us implement ESS (Employee Self Service) portal for our large enterprise,
+                                        which
+                                        made both
+                                        employees and Human Resources more productive. User-oriented interface and
+                                        professional
+                                        team.</h1>
+                                </div>
+                                <p class="testimonialClientName">Vice President</p>
+                                <p class="testimonialClientDesc">CPF India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content"> <!-- slide 2 -->
+                        <div class="thumbnail">
+                            <img src="https://farsighttechnologies.com/wp-content/uploads/2020/09/MS.jpg">
+                        </div>
+                        <div class="btnNtxt">
+                            <div class="testimonialAllContent">
+                                <div class="testimonial_scroll">
+                                    <h1 class="testimonialCustomSliderHeading">For us, Farsight has become much more
+                                        than a
+                                        software solution
+                                        provider. Farsight has been our helping hand with implementing business
+                                        automation.
+                                        The
+                                        team's
+                                        expertise, skill, and commitment to excellence are what makes them so great.
+                                    </h1>
+                                </div>
+                                <p class="testimonialClientName">Head IT</p>
+                                <p class="testimonialClientDesc">Mushashi Auto Parts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content"> <!-- slide 3 -->
+                        <div class="thumbnail">
+                            <img src="https://farsighttechnologies.com/wp-content/uploads/2020/09/RR.jpg">
+                        </div>
+                        <div class="btnNtxt">
+                            <div class="testimonialAllContent">
+                                <div class="testimonial_scroll">
+                                    <h1 class="testimonialCustomSliderHeading">I would like to place on record my
+                                        sincere
+                                        appreciation for
+                                        helping us to automate the Salary Revision Exercise and also the Leave
+                                        Management
+                                        System
+                                        at Schneider
+                                        Electric India...</h1>
+                                </div>
+                                <p class="testimonialClientName">Vice President – India HR Services</p>
+                                <p class="testimonialClientDesc">Schneider Electric</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content"> <!-- slide 4 -->
+                        <div class="thumbnail">
+                            <img src="https://farsighttechnologies.com/wp-content/uploads/2020/12/testimonial.png">
+                        </div>
+                        <div class="btnNtxt">
+                            <div class="testimonialAllContent">
+                                <div class="testimonial_scroll">
+                                    <h1 class="testimonialCustomSliderHeading">With Farsight’s Employee Self Service
+                                        Portal,
+                                        our
+                                        Vision of
+                                        implementing an HR Software in Honda R&D (India) could be realized for the easy
+                                        and
+                                        smooth functioning
+                                        of operations...</h1>
+                                </div>
+                                <p class="testimonialClientName">General Manager – Administration Head</p>
+                                <p class="testimonialClientDesc">Honda R&D (India) Pvt. Ltd. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            var $slickElement = $('.slideshow');
+
+            $slickElement.slick({
+                autoplay: true,
+                dots: false,
+            });
+        });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
