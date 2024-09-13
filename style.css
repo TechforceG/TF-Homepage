@@ -43,6 +43,71 @@ ul {
     background-color: var(--Text);
 }
 
+/* Button-CSS */
+
+.Main-Button {
+    /* height: 60px; */
+    line-height: auto;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    /* letter-spacing: 0.03em; */
+    z-index: 9;
+    /* overflow: hidden; */
+    display: inline-block;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    background-color: var(--Text);
+    color: #fff;
+    border: 2px solid transparent;
+    margin-top: 50px;
+}
+
+.Main-Button span {
+    margin-left: 12px;
+    position: relative;
+}
+
+.Main-Button span .svg-icon {
+    position: absolute;
+    top: 7px;
+    left: -2px;
+    right: 0;
+    z-index: 2;
+    margin: 0 auto;
+    transition: 0.3s;
+    color: var(--Text);
+}
+
+.Main-Button:hover span .svg-icon {
+    color: #fff;
+}
+
+.Main-Button:hover span .svg-bg {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Main-Button:hover {
+    background-color: transparent;
+    color: var(--Text);
+    border-color: var(--Text);
+    text-decoration: none;
+}
+
+/* -------------------------------- */
+
 .light-bg-title {
     font-size: 50px;
     margin-bottom: 30px;
@@ -296,6 +361,27 @@ ul {
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out, filter 0.8s ease-in-out;
     filter: blur(4px);
     text-align: center;
+}
+
+.flip span strong{
+    background: linear-gradient(90deg, #35ba7e 0%, #f0a431 50%, #ff0080 100%);
+    animation: gradient-animation 6s infinite ease-in-out;
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .flip span.set {
@@ -1569,11 +1655,11 @@ button.slick-next.slick-arrow:hover {
         right: 400px;
     }
 
-    .button.slick-next.slick-arrow{
+    .button.slick-next.slick-arrow {
         right: 40% !important;
     }
 
-    .button.slick-pre.slick-arrow{
+    .button.slick-pre.slick-arrow {
         left: 40% !important;
     }
 }
