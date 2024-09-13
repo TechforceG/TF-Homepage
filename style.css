@@ -1931,7 +1931,11 @@ button.slick-next.slick-arrow:hover {
     }
 
     .flip span {
-        font-size: 26px;
+        font-size: 28px;
+    }
+
+    .Main-Button{
+        padding: 10px 20px;
     }
 
     .Hero-Section .explore-button {
