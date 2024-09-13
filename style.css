@@ -1177,6 +1177,10 @@ section.award-section ul {
     padding: 100px 0px;
 }
 
+.portfolio-main {
+    margin-top: 50px;
+}
+
 .portfolio-section .card-title {
     font-weight: bold;
     color: var(--Primary);
@@ -1313,7 +1317,7 @@ section.award-section ul {
     z-index: 3;
 }
 
-.slick-slider{
+.slick-slider {
     border: 1px solid #0000000f;
 }
 
@@ -1321,7 +1325,7 @@ button.slick-prev.slick-arrow {
     position: absolute;
     /* z-index: 9999; */
     bottom: -120px;
-    left: 40%;
+    left: 45%;
     /* background: var(--Text); */
     background: none;
     border: 2px solid var(--Text);
@@ -1342,7 +1346,7 @@ button.slick-prev.slick-arrow {
 button.slick-next.slick-arrow {
     position: absolute;
     bottom: -120px;
-    right: 40%;
+    right: 45%;
     background: none;
     border: 2px solid var(--Text);
     color: transparent;
@@ -1564,6 +1568,14 @@ button.slick-next.slick-arrow:hover {
     .about-shape {
         right: 400px;
     }
+
+    .button.slick-next.slick-arrow{
+        right: 40% !important;
+    }
+
+    .button.slick-pre.slick-arrow{
+        left: 40% !important;
+    }
 }
 
 /* <998px Device */
@@ -1668,7 +1680,7 @@ button.slick-next.slick-arrow:hover {
 
     /* Portfoli-Section */
 
-    .portfolio-section .col-md-4{
+    .portfolio-section .col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 30px;
@@ -1684,6 +1696,16 @@ button.slick-next.slick-arrow:hover {
 
     .industry-main {
         display: none;
+    }
+
+    /* Testimonial-Section */
+
+    button.slick-prev.slick-arrow {
+        left: 40%;
+    }
+
+    button.slick-next.slick-arrow {
+        right: 40%;
     }
 }
 
@@ -1891,24 +1913,12 @@ button.slick-next.slick-arrow:hover {
 
     /* Testimonial-Section */
 
-    button.slick-prev.slick-arrow{
-        left: 35%;
-    }
-    button.slick-next.slick-arrow{
-        right: 35%;
+    button.slick-prev.slick-arrow {
+        left: 32%;
     }
 
-}
+    button.slick-next.slick-arrow {
+        right: 32%;
+    }
 
-.pxl-heading .pxl-heading--inner .pxl-item--title.gradient-hightlight .pxl-title--highlight, .wp-title .pxl-heading--inner .pxl-item--title.gradient-hightlight .pxl-title--highlight {
-    font-family: inherit;
-    font-style: normal;
-    background: linear-gradient(90deg,var(--secondary-color) 0%,var(--gradient-color-from) 50%,var(--gradient-color-to) 100%);
-    animation: gradient-animation 6s infinite ease-in-out;
-    background-size: 300% 300%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    letter-spacing: -1.92px;
-    font-weight: 700;
-    -webkit-text-fill-color: transparent;
 }
