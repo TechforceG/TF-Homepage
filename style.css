@@ -46,15 +46,12 @@ ul {
 /* Button-CSS */
 
 .Main-Button {
-    /* height: 60px; */
     line-height: auto;
     border-radius: 40px;
-    padding: 12px 30px;
+    padding: 10px 20px;
     font-weight: 500;
     font-size: 18px;
-    /* letter-spacing: 0.03em; */
     z-index: 9;
-    /* overflow: hidden; */
     display: inline-block;
     text-transform: capitalize;
     position: relative;
@@ -113,64 +110,15 @@ ul {
     margin-bottom: 30px;
     color: var(--Text);
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-.pxl-divider-vertical {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 1350px;
-    margin: 0 auto;
-    /* z-index: 99; */
-}
-
-.pxl-divider-vertical>div {
-    background-color: rgba(221, 221, 221, .4);
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0
-}
-
-.pxl-divider-vertical>div:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 60px;
-    background: linear-gradient(0deg, rgba(21, 21, 21, .5) 0%, rgba(255, 255, 255, 1e-8) 100%);
-    animation: pxl_grid_fall 10s linear infinite
-}
-
-.pxl-divider-vertical .pxl-section-line1 {
-    left: 0
-}
-
-.pxl-divider-vertical .pxl-section-line2 {
-    left: 33%
-}
-
-.pxl-divider-vertical .pxl-section-line3 {
-    left: 67%
-}
-
-.pxl-divider-vertical .pxl-section-line4 {
-    left: 100%
-}
-
-@keyframes pxl_grid_fall {
-    0% {
-        top: 0%;
-    }
-
-    100% {
-        top: 100%;
-    }
+.dark-bg-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 /* Hero-Section */
@@ -363,7 +311,7 @@ ul {
     text-align: center;
 }
 
-.flip span strong{
+.flip span strong {
     background: linear-gradient(90deg, #35ba7e 0%, #f0a431 50%, #ff0080 100%);
     animation: gradient-animation 6s infinite ease-in-out;
     background-size: 300% 300%;
@@ -376,9 +324,11 @@ ul {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -898,14 +848,6 @@ section.award-section ul {
     font-weight: 500;
 }
 
-.dark-bg-title {
-    font-size: 50px;
-    margin-bottom: 30px;
-    color: #fff;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
 .services-slider {
     display: flex;
     justify-content: center;
@@ -1247,7 +1189,7 @@ section.award-section ul {
 }
 
 .small-device h3 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .small-device .card img {
@@ -1469,12 +1411,12 @@ button.slick-next.slick-arrow:hover {
     color: var(--Text);
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.6em;
+    line-height: 1.4em;
     text-align: center;
 }
 
 .testimonialAllContent {
-    width: 75%;
+    width: 85%;
     margin: auto;
 }
 
@@ -1511,23 +1453,6 @@ button.slick-next.slick-arrow:hover {
     margin-bottom: 10px;
 }
 
-/* style for mobile */
-@media (max-width:576px) {
-    .testimonial_scroll {
-        height: auto;
-        overflow: auto;
-        max-height: 240px;
-    }
-
-    .thumbnail,
-    .btnNtxt {
-        width: 100% !important;
-        display: block !important;
-    }
-}
-
-/* scroll bar */
-/* total width */
 .testimonial_scroll::-webkit-scrollbar {
     background-color: transparent;
     width: 6px;
@@ -1760,6 +1685,17 @@ button.slick-next.slick-arrow:hover {
         filter: blur(90px);
     }
 
+    /* Services-Section */
+
+    .services-section {
+        padding: 60px 0px;
+    }
+
+    .services-slider .card h3 {
+        font-size: 22px;
+        height: auto;
+    }
+
     /* .Hero-Section .scroll {
         display: none;
     } */
@@ -1934,8 +1870,10 @@ button.slick-next.slick-arrow:hover {
         font-size: 28px;
     }
 
-    .Main-Button{
-        padding: 10px 20px;
+    .Main-Button {
+        padding: 5px 15px;
+        font-size: 14px;
+        margin-top: 20px;
     }
 
     .Hero-Section .explore-button {
@@ -1959,7 +1897,11 @@ button.slick-next.slick-arrow:hover {
     /* About_Us-section */
 
     .about-right .section-title ul li {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .about-right .section-title p {
+        font-size: 16px;
     }
 
     .about-conter-box {
@@ -2009,6 +1951,27 @@ button.slick-next.slick-arrow:hover {
 
     button.slick-next.slick-arrow {
         right: 32%;
+    }
+
+    .testimonial_scroll {
+        height: auto;
+        overflow: auto;
+        max-height: 240px;
+    }
+
+    .thumbnail,
+    .btnNtxt {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .testimonialCustomSliderHeading {
+        font-size: 16px;
+    }
+
+    .testimonialAllContent {
+        width: 80%;
+        margin: auto;
     }
 
 }
