@@ -55,6 +55,14 @@ ul {
     z-index: 9999;
 }
 
+.loader-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #svg {
     height: 200px;
     width: 200px;
@@ -65,10 +73,10 @@ ul {
     stroke-dashoffset: 4500;
     animation: draw 20s ease infinite;
     /* Infinite looping animation */
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 @keyframes draw {
@@ -84,6 +92,19 @@ ul {
 .hidden {
     display: none;
 }
+
+.name-container {
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .logo-name {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 12px;
+    font-weight: bolder;
+    margin-top: 40px;
+  }
 
 /* Button-CSS */
 
