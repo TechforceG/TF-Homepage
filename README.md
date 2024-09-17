@@ -1,2 +1,2 @@
 # Techforce-Global
-https://techforceg.github.io/TFIHomepage/
+https://techforceg.github.io/TF-Homepage/
