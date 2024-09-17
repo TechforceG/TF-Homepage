@@ -72,11 +72,6 @@ ul {
     stroke-dasharray: 4500;
     stroke-dashoffset: 4500;
     animation: draw 20s ease infinite;
-    /* Infinite looping animation */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 @keyframes draw {
@@ -92,11 +87,6 @@ ul {
 .hidden {
     display: none;
 }
-
-.name-container {
-    height: 30px;
-    overflow: hidden;
-  }
   
   .logo-name {
     color: #fff;
@@ -1954,8 +1944,12 @@ button.slick-next.slick-arrow:hover {
     }
 
     #svg {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         stroke-width: 2px;
     }
+
+    .logo-name {
+        font-size: 20px;
+      }
 }
