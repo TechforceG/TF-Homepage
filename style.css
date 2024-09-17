@@ -1932,4 +1932,10 @@ button.slick-next.slick-arrow:hover {
         width: 80%;
         margin: auto;
     }
+
+    #svg {
+        height: 200px;
+        width: 200px;
+        stroke-width: 2px;
+    }
 }
