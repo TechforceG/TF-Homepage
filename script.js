@@ -84,6 +84,3 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
     glare: true,
     "max-glare": 0.5,
 });
-
-
-// Text Effect
