@@ -1825,6 +1825,11 @@ button.slick-next.slick-arrow:hover {
         max-width: 540px;
     }
 
+    .slide-up {
+        transform: translateY(-100%);
+        border-radius: 0 0 35% 35%;
+    }
+
     .light-bg-title {
         font-size: 32px;
         margin-top: 10px;
