@@ -1280,7 +1280,7 @@ section.award-section ul {
 
 .portfolio-section .card-title {
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
     font-size: 28px;
 }
 
@@ -1322,7 +1322,7 @@ section.award-section ul {
 }
 
 .portfolio-section .card-description {
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -2121,7 +2121,8 @@ button.slick-next.slick-arrow:hover {
 
 .cursor-follower {
     position: absolute;
-    background: rgba(255, 255, 255, 0.525);
+    /* background: rgba(255, 255, 255, 0.525); */
+    border: 2px solid var(--Text);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -2158,6 +2159,17 @@ button.slick-next.slick-arrow:hover {
 }
 
 .portfolio-inner:hover img{
-    filter: blur(5px) !important;
+    filter: blur(5px);
     transform: scale(1.1);
+}
+
+.portfolio-section .portfolio-main1{
+    margin-top: 30px;
+}
+
+@media (max-width: 992px){
+    .portfolio-section .portfolio-main1{
+        margin-top: 0px;
+    }
+    
 }
